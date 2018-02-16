@@ -1,0 +1,19 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "'Boilerplate code for React SPA'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnyaneshbhalerao/react-boilerplate.git"
+  },
+  "author": "Dnyaneshwar Bhalerao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnyaneshbhalerao/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/dnyaneshbhalerao/react-boilerplate#readme"
+}
