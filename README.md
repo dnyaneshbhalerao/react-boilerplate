@@ -1,5 +1,8 @@
-# react-boilerplate
+# React-boilerplate
 Boilerplate for react application
 
-## For Build 
+## To Build the  
  npm run build
+
+## To Run the application
+  npm start
