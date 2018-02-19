@@ -4,7 +4,8 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        'Hello from react'
+        <h1>Hello from React</h1>
+        'Everything is setup.. Edit this line to reflect changes' 
       </div>
     )
   }

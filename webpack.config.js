@@ -21,7 +21,7 @@ var uglifyJsPlugInConfig = new UglifyJsPlugin({
 })
 
 module.exports = {
-  devtool: 'source-map',
+  devtool: 'eval',
   entry:[
     'babel-polyfill',
     'react-hot-loader/patch',
