@@ -22,7 +22,11 @@ var uglifyJsPlugInConfig = new UglifyJsPlugin({
 
 module.exports = {
   devtool: 'source-map',
-  entry: __dirname + '/src/index.js',
+  entry:[
+    'babel-polyfill',
+    'react-hot-loader/patch',
+    __dirname + '/src/index.js'
+  ],
   module: {
     loaders: [
       {
