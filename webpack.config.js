@@ -30,17 +30,16 @@ module.exports = {
     __dirname + '/src/index.jsx'
   ],
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        loader:'babel-loader'
+        use:[{loader: 'babel-loader'}],
       },
       {
         test: /\.css$/,
         use: [ 'style-loader', 'css-loader' ]
       }
-    ]
+    ],
   },
   resolve: {
     extensions: ['.js', '.jsx']

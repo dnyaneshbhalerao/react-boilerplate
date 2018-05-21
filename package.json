@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "update-packages": "node clear-package-dependency.js && rm -rf node_modules && npm update --save-dev && npm update --save"
   },
   "babel": {
     "presets": [
@@ -28,26 +29,27 @@
   },
   "homepage": "https://github.com/dnyaneshbhalerao/react-boilerplate#readme",
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "react": "^16.2.0",
-    "react-hot-loader": "^3.1.3",
-    "react-router": "^4.2.0"
+    "babel-polyfill": "*",
+    "react": "^16.3.2",
+    "react-hot-loader": "^4.2.0",
+    "react-router": "*"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.9",
-    "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.8.2",
-    "html-webpack-plugin": "^2.30.1",
-    "react-dom": "^16.2.0",
-    "style-loader": "^0.20.2",
-    "uglifyjs-webpack-plugin": "^1.1.8",
-    "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.1"
+    "babel": "*",
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "css-loader": "*",
+    "eslint": "*",
+    "eslint-plugin-react": "*",
+    "html-webpack-plugin": "*",
+    "react-dom": "*",
+    "style-loader": "*",
+    "uglifyjs-webpack-plugin": "*",
+    "webpack": "*",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "*"
   }
 }
