@@ -18,11 +18,12 @@ var uglifyJsPlugInConfig = new UglifyJsPlugin({
     },
     compress: true,
     warnings: false
-  }
+  },
+  sourceMap: true
 })
 
 module.exports = {
-  devtool: 'eval',
+  devtool: 'source-map',
   entry:[
     'babel-polyfill',
     'react-hot-loader/patch',
@@ -48,7 +49,7 @@ module.exports = {
     inline:true,
   },
   output:{
-    filename:'assets/script/bundle.js',
+    filename:'script/bundle.js',
     path:__dirname+'/build'
   },
   plugins: [HTMLWebpackPluginConfig, uglifyJsPlugInConfig]

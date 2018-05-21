@@ -6,7 +6,7 @@ export default class App extends React.Component {
     return (
       <div>
         <h1>Hello from React</h1>
-        Everything is setup. We are Ready to go... 
+        Everything is setup. We are Ready to go...
       </div>
     )
   }
