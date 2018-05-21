@@ -1,5 +1,6 @@
 var HTMLWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const path = require('path');
 
 var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
   template: __dirname + '/src/index.html',
@@ -39,6 +40,12 @@ module.exports = {
         use: [ 'style-loader', 'css-loader' ]
       }
     ]
+  },
+  devServer: {
+    contentBase: path.join(__dirname, "build"),
+    port: 3000,
+    historyApiFallback: true,
+    inline:true,
   },
   output:{
     filename:'assets/script/bundle.js',
