@@ -27,12 +27,12 @@ module.exports = {
   entry:[
     'babel-polyfill',
     'react-hot-loader/patch',
-    __dirname + '/src/index.js'
+    __dirname + '/src/index.jsx'
   ],
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader:'babel-loader'
       },
@@ -41,6 +41,9 @@ module.exports = {
         use: [ 'style-loader', 'css-loader' ]
       }
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
   },
   devServer: {
     contentBase: path.join(__dirname, "build"),
